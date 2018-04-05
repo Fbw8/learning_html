@@ -24,6 +24,7 @@
                 </ul>
             </li>
         </ol>
+        <a href="#" onclick="retrievedata()">Update data</a>
         <p class="loremp" id="loremp"></p>
         <p>This is paragraph 1</p>
         <p>This is paragraph 2</p>
@@ -46,6 +47,26 @@
             </pre>
         </code>
     </body>
-    <script>$.post("lorem.txt", "loremp", function(response) {
-    $('p').text(response);});</script>
+    <script>
+        
+        function retrievedata(time)
+        {
+            var xmlhttp;
+            var the_hash = 'dahush29893ho23h923z29uh3rr9h9vhohf' + time;
+            if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();
+            } else {
+            // code for older browsers
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("loremp").innerHTML =
+              this.responseText;
+            }
+            };
+            xmlhttp.open("GET", "retrieve_data.php?hash="+the_hash, true);
+            xmlhttp.send();
+        }
+    </script>
 </html>
