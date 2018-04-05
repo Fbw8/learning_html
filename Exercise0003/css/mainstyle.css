@@ -71,33 +71,13 @@ ul{
     display: inline-block;
 }
 .circle{
-    /*/
-    border-radius: 100%;
-    behavior: url(PIE.htc);
-    
-    width: 200px;
-    height: 200px;
-    padding: 8px;
-    background: #fff;
-    border: 2px solid #666;
-    border-radius: 100px;
-    color: #666;
-    text-align: center;
-    font: 100px Arial, sans-serif;
-    //*/
     height: 120px;
     width: 120px;
     line-height: 120px;
     border-radius: 100%;
     text-align: center;
     font-size: 32px;
-    border: 2px solid #666;
-    
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    text-align-last: center;
+    border: 2px solid #666;   
     
     display: inline-block;
     background-color: yellowgreen;
@@ -105,8 +85,6 @@ ul{
 .the_circles{
     
     text-align: center;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    text-align-last: center;
+   
+    
 }
