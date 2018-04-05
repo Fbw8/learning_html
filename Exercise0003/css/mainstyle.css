@@ -29,12 +29,16 @@ body{
 p{
     width: 50%;
 }
+ul{
+    list-style-type: none;
+}
 .setred
 {
     color: white;
     background-color: red;
     width: 100px;
     height: 100px;
+    margin: 5px;
 }
 .setblue
 {
@@ -43,4 +47,49 @@ p{
     text-align: right;
     width: 100px;
     height: 100px;
+    margin: 5px;
+}
+
+.circelized
+{
+    color: yellow;
+    background-color: purple;
+    margin: 5px;
+    width: 100px;
+	height: 100px;
+    -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align-last: center;
+}
+#circle{
+    border-radius: 100%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #666;
+    border-radius: 100px;
+    color: #666;
+    text-align: center;
+    font: 100px Arial, sans-serif;
+    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align-last: center;
+}
+.the_circles{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align-last: center;
 }
