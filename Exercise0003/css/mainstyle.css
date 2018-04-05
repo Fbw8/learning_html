@@ -52,24 +52,29 @@ ul{
 
 .circelized
 {
-    color: yellow;
-    background-color: purple;
-    margin: 5px;
+    height: 100px;
     width: 100px;
-	height: 100px;
-    -moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+    line-height: 100px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 32px;
+    border: 2px solid #666;
+    background-color: purple;
+    color: yellow;
+    
     text-align: center;
     align-items: center;
     align-content: center;
     vertical-align: middle;
     text-align-last: center;
+    
+    display: inline-block;
 }
-#circle{
+.circle{
+    /*/
     border-radius: 100%;
     behavior: url(PIE.htc);
-    /* remove if you don't care about IE8 */
+    
     width: 200px;
     height: 200px;
     padding: 8px;
@@ -79,14 +84,26 @@ ul{
     color: #666;
     text-align: center;
     font: 100px Arial, sans-serif;
+    //*/
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 32px;
+    border: 2px solid #666;
     
     text-align: center;
     align-items: center;
     align-content: center;
     vertical-align: middle;
     text-align-last: center;
+    
+    display: inline-block;
+    background-color: yellowgreen;
 }
 .the_circles{
+    
     text-align: center;
     align-items: center;
     align-content: center;
